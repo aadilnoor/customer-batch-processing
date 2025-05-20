@@ -1,18 +1,22 @@
-📥 Customer CSV Upload & Batch Processing System
+# 📥 Customer CSV Upload & Batch Processing System
 
-A modern Spring Boot application that allows users to upload customer data via CSV file. The system processes the file using Spring Batch, inserts records into the database, and intelligently prevents duplicate file uploads using SHA-256 hashing. Uploaded file details are also stored in a separate tracking table for full traceability.
+A modern Spring Boot application that allows users to upload customer data via a CSV file. The system processes the file using **Spring Batch**, inserts records into a database, and **intelligently prevents duplicate uploads** using **SHA-256 hashing**. Each upload is tracked in a separate table for full traceability and audit purposes.
 
-🚀 Key Features
+---
 
-✨ CSV Upload with Validation  
-🧠 Smart Duplicate Detection using SHA-256  
-⚙️ Spring Batch Job Trigger on Upload  
-📁 File Saved in Local `/uploads` Folder  
-📊 Customer Data Stored in DB  
-📂 File Info Saved in a Separate Table (`uploaded_file`)  
-🌐 Swagger UI for Easy Testing & Docs  
+## 🚀 Key Features
 
-📦 Tech Stack
+- ✨ **CSV Upload with Validation**
+- 🧠 **Duplicate Detection via SHA-256 Hashing**
+- ⚙️ **Trigger Spring Batch Job on Upload**
+- 📁 **Store Files in `/uploads` Folder**
+- 🗃 **Persist Customer Records to Database**
+- 📂 **Track File Metadata in `uploaded_file` Table**
+- 🌐 **Test Easily Using Swagger UI**
+
+---
+
+## 📦 Tech Stack
 
 - ☕ Java 17  
 - 🌱 Spring Boot  
@@ -20,9 +24,11 @@ A modern Spring Boot application that allows users to upload customer data via C
 - 🗃 Spring Data JPA  
 - 🧪 Swagger (SpringDoc OpenAPI)  
 - 🧰 Maven  
-- 🛢️ MySQL  
+- 🛢️ MySQL
 
-📁 Project Modules
+---
+
+## 🗂️ Project Structure
 
 src/
 ├── controller/            # API layer (CSV Upload endpoint)
@@ -34,14 +40,18 @@ src/
     └── application.yml    # App configuration
 
 
-📂 CSV Format Example
 
+---
+
+## 📂 CSV Format Example
+
+```csv
 id,firstName,lastName,email,gender,contactNo,country,dob
 1,John,Doe,john@example.com,Male,1234567890,USA,1990-01-01
 2,Jane,Smith,jane@example.com,Female,0987654321,UK,1992-05-12
 
 
-🧪 Workflow
+## 🧪 Workflow
 
 📤 User uploads a CSV file via Swagger or Postman
 🔐 SHA-256 hash is generated
@@ -50,7 +60,7 @@ id,firstName,lastName,email,gender,contactNo,country,dob
 ❌ If duplicate → request blocked with 409 status
 
 
-⚙️ How to Run Locally
+## ⚙️ How to Run Locally
 
 # Clone the project
 git clone https://github.com/aadilnoor/customer-batch-processing.git
