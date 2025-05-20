@@ -30,14 +30,14 @@ A modern Spring Boot application that allows users to upload customer data via a
 
 ## 🗂️ Project Structure
 
-src/
-├── controller/            # API layer (CSV Upload endpoint)
-├── config/                # Spring Batch configuration
-├── model/                 # Entities: Customer, UploadedFile
-├── repository/            # JPA repositories
-├── utils/                 # File hashing helper
-└── resources/
-    └── application.yml    # App configuration
+## src/
+## ├── controller/            # API layer (CSV Upload endpoint)
+## ├── config/                # Spring Batch configuration
+## ├── model/                 # Entities: Customer, UploadedFile
+## ├── repository/            # JPA repositories
+## ├── utils/                 # File hashing helper
+## └── resources/
+##    └── application.yml     # App configuration
 
 
 
