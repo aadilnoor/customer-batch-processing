@@ -31,13 +31,13 @@ A modern Spring Boot application that allows users to upload customer data via a
 ## 🗂️ Project Structure
 
 ## src/
-## ├── controller/            # API layer (CSV Upload endpoint)
-## ├── config/                # Spring Batch configuration
-## ├── model/                 # Entities: Customer, UploadedFile
-## ├── repository/            # JPA repositories
-## ├── utils/                 # File hashing helper
-## └── resources/
-##    └── application.yml     # App configuration
+# ├── controller/            # API layer (CSV Upload endpoint)
+# ├── config/                # Spring Batch configuration
+# ├── model/                 # Entities: Customer, UploadedFile
+# ├── repository/            # JPA repositories
+# ├── utils/                 # File hashing helper
+# └── resources/
+#    └── application.yml     # App configuration
 
 
 
@@ -51,7 +51,7 @@ id,firstName,lastName,email,gender,contactNo,country,dob
 2,Jane,Smith,jane@example.com,Female,0987654321,UK,1992-05-12
 
 
-## 🧪 Workflow
+🧪 Workflow
 
 📤 User uploads a CSV file via Swagger or Postman
 🔐 SHA-256 hash is generated
@@ -60,7 +60,7 @@ id,firstName,lastName,email,gender,contactNo,country,dob
 ❌ If duplicate → request blocked with 409 status
 
 
-## ⚙️ How to Run Locally
+# ⚙️ How to Run Locally
 
 # Clone the project
 git clone https://github.com/aadilnoor/customer-batch-processing.git
