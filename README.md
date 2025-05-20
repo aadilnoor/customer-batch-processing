@@ -62,6 +62,5 @@ mvn clean install
 # Run the app
 mvn spring-boot:run
 
-                                                                        🙌 Author
-                                                                        👨‍💻 Aadil Noor
-                                                                        🔗 [@aadilnoor](https://github.com/aadilnoor)
+🙌 Author
+👨‍💻 Aadil Noor
